@@ -1,19 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom"; 
 import { AppBar, Toolbar, Typography, IconButton, Button, useMediaQuery, useTheme } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import useStyles from "./style";
+import DrawerComponent from "../drawer/Drawer";
 
 
-
-function NavBar() {
+function NavBar(props) {
   const classes = useStyles();
-
   const theme = useTheme();
 
   const isSmall = useMediaQuery(theme.breakpoints.down('sm'));
-
 
 
   return (
@@ -25,9 +23,10 @@ function NavBar() {
 
         {isSmall ? 
           <>
-            <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <DrawerComponent />
+            {/* <IconButton edge="start" onClick={} className={classes.menuButton} color="inherit" aria-label="menu">
               <MenuIcon />
-            </IconButton>
+            </IconButton> */}
           </>
          : 
           <>
