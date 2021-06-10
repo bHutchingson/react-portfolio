@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { AppBar, Toolbar, Typography, IconButton, Button, useMediaQuery, useTheme } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
-import useStyles from "./style";
+import useStyles from "../drawer/style";
 import DrawerComponent from "../drawer/Drawer";
 
 
-function NavBar(props) {
+function NavBar() {
   const classes = useStyles();
   const theme = useTheme();
 
@@ -24,9 +24,6 @@ function NavBar(props) {
         {isSmall ? 
           <>
             <DrawerComponent />
-            {/* <IconButton edge="start" onClick={} className={classes.menuButton} color="inherit" aria-label="menu">
-              <MenuIcon />
-            </IconButton> */}
           </>
          : 
           <>
