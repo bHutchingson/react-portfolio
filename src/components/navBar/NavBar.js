@@ -30,7 +30,15 @@ function NavBar() {
         </Typography>
         <Button color="inherit">
           <Link 
-              to="/discover"
+              to="/"
+              className={window.location.pathname === "/about" ? "nav-link active" : "nav-link"}
+            >
+              About
+          </Link>
+        </Button>
+        <Button color="inherit">
+          <Link 
+              to="/projects"
               className={window.location.pathname === "/projects" ? "nav-link active" : "nav-link"}
             >
               Projects
@@ -38,7 +46,7 @@ function NavBar() {
         </Button>
         <Button color="inherit">
           <Link 
-              to="/discover"
+              to="/skills"
               className={window.location.pathname === "/skills" ? "nav-link active" : "nav-link"}
             >
               Skills
@@ -46,7 +54,7 @@ function NavBar() {
         </Button>
         <Button color="inherit">
           <Link 
-              to="/discover"
+              to="/contact"
               className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}
             >
               Contact
