@@ -1,11 +1,11 @@
 import React from 'react'
 
-function projects() {
+function About() {
   return (
     <div>
-      projects
+      about
     </div>
   )
 }
 
-export default projects
+export default About

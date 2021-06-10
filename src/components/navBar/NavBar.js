@@ -26,7 +26,7 @@ function NavBar() {
         <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
         </IconButton>
         <Typography variant="h6" className={classes.title}>
-          News
+          Brandon Hutchingson
         </Typography>
         <Button color="inherit">
           <Link 
