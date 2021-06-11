@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AppBar, Toolbar, Typography, IconButton, Button, useMediaQuery, useTheme } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
-import useStyles from "../drawer/style";
+import useStyles from "./style";
 import DrawerComponent from "../drawer/Drawer";
 
 
@@ -32,7 +32,7 @@ function NavBar() {
           <>
             {navLinks.map(link => {
               return (
-                <Button color="inherit">
+                <Button key={link} color="inherit" className={classes.navItems}>
                   <Link to={`/${link}`}
                     className={window.location.pathname === "/" + { link } ? "nav-link active" : "nav-link"}
                   >
