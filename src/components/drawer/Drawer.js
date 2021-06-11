@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { Drawer, ListItemIcon, IconButton } from '@material-ui/core'
+import { Drawer, ListItemIcon, IconButton, Button } from '@material-ui/core'
+import { Link } from "react-router-dom";
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import MenuIcon from '@material-ui/icons/Menu';
 import useStyles from "./style";
+import Skills from "../../pages/skills";
 
 
 
@@ -15,22 +17,22 @@ const DrawerComponent = () => {
     <>
       <Drawer anchor="right" onClose={() => setOpenDrawer(false)} open={openDrawer}>
         <List>
-          <ListItem divider button>
+        <ListItem divider button component={Link} to="/about">
             <ListItemIcon>
               <ListItemText>About</ListItemText>
             </ListItemIcon>
           </ListItem>
-          <ListItem divider button>
+          <ListItem divider button component={Link} to="/projects">
             <ListItemIcon>
               <ListItemText>Projects</ListItemText>
             </ListItemIcon>
           </ListItem>
-          <ListItem divider button>
+          <ListItem divider button component={Link} to="/skills">
             <ListItemIcon>
               <ListItemText>Skills</ListItemText>
             </ListItemIcon>
           </ListItem>
-          <ListItem divider button>
+          <ListItem divider button component={Link} to="/contact">
             <ListItemIcon>
               <ListItemText>Contact</ListItemText>
             </ListItemIcon>
