@@ -11,7 +11,9 @@ import useStyles from "./style";
 
 const DrawerComponent = () => {
   const [openDrawer, setOpenDrawer] = useState(false)
+  const classes = useStyles;
 
+  //page options for navbar
   const navLinks = ["About", "Projects", "Skills", "Contact"]
 
   return (
@@ -29,7 +31,7 @@ const DrawerComponent = () => {
           })}
         </List>
       </Drawer>
-      <IconButton edge="start" onClick={(() => setOpenDrawer(!openDrawer))} /* className={classes.menuButton} */ color="inherit" aria-label="menu">
+      <IconButton edge="start" onClick={(() => setOpenDrawer(!openDrawer))} className={classes.menuButton} color="inherit" aria-label="menu">
         <MenuIcon />
       </IconButton>
     </>
