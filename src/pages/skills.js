@@ -1,6 +1,6 @@
 import React from 'react'
 
-function skills() {
+function Skills() {
   return (
     <div>
       skills
@@ -8,4 +8,4 @@ function skills() {
   )
 }
 
-export default skills
+export default Skills
