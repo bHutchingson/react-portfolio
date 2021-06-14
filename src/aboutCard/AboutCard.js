@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
+    display: 'flex',
     minWidth: 275,
   },
   bullet: {
@@ -23,7 +24,7 @@ const useStyles = makeStyles({
   },
 });
 
-const AboutCard = () => {
+const SimpleCard = () => {
   const classes = useStyles();
   const bull = <span className={classes.bullet}>•</span>;
 
@@ -52,4 +53,4 @@ const AboutCard = () => {
   );
 }
 
-export default AboutCard;
+export default SimpleCard;

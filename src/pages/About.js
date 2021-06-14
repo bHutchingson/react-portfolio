@@ -1,10 +1,9 @@
 import React from 'react'
+import SimpleCard from '../aboutCard/AboutCard';
 
 function About() {
   return (
-    <div>
-      about
-    </div>
+    <SimpleCard />
   )
 }
 
