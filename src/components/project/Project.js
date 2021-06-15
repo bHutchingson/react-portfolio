@@ -6,6 +6,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
+import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import useStyles from "./style";
 import Aos from 'aos';
@@ -20,18 +21,19 @@ const Project = (props) => {
 
 
   return (
-    <Card data-aos="fade-left" className={classes.root}>
+    <Card data-aos="fade-up" className={classes.root}>
       <div>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Project Title
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          <Typography variant="body2" color="textPrimary" component="p">
+            Project Description
         </Typography>
-          <Grid>
-            hi
+          <Grid container spacing={1}>
+            <Grid className={classes.cardContainer} item xs={4}>
+              <Paper item className={`${classes.root} ${classes.skillItem}`}></Paper>
+            </Grid>
           </Grid>
         </CardContent>
         <CardActions>

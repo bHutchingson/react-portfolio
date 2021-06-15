@@ -33,8 +33,8 @@ const SimpleCard = () => {
   }, []);
 
   return (
-    <div data-aos="fade-up" className={classes.aboutPage}>
-      <div className={classes.cardContainer}>
+    <div className={classes.aboutPage}>
+      <div data-aos="fade-up" className={classes.cardContainer}>
         <Card className={classes.root}>
           <CardContent className={classes.content}>
             <Typography className={classes.text} variant="h5" component="h2" gutterBottom>
@@ -49,7 +49,7 @@ const SimpleCard = () => {
           </CardActions>
         </Card>
       </div>
-      <div className={classes.grid}>
+      <div data-aos="slide-up" className={classes.grid}>
         <Grid className={classes.cardContainer} container spacing={2} >
           {skillsArray.map(skill => {
             return (
