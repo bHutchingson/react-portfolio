@@ -24,7 +24,7 @@ const SimpleCard = () => {
         </Typography>
       </CardContent>
       <CardActions className={classes.contactBtn}>
-        <Button size="small">Contact Me</Button>
+        <Button className={classes.btn} variant="primary" size="medium">Contact Me</Button>
       </CardActions>
     </Card>
   </>
