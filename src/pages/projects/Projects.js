@@ -1,6 +1,8 @@
 import React from 'react'
 import Project from '../../components/project/Project';
 import useStyles from "./style";
+import Grid from '@material-ui/core/Grid';
+import { DriveEtaRounded } from '@material-ui/icons';
 
 const projectsArray = [
   {
@@ -56,12 +58,14 @@ function Projects() {
   const classes = useStyles();
 
   return (
-    <div className={classes.projectContainer}>
+    <div spacing={1} container className={classes.projectContainer}>
       {projectsArray.map(project => {
       return (
-        <Project title={project.Title} desc={project.Description} code={project.GitHub} deployed={project.Deployed}/>
+        <div className={classes.projectGrid} item >
+          <Project className={classes.projectCard} title={project.Title} desc={project.Description} code={project.GitHub} deployed={project.Deployed}/>
+        </div>
       )
-    })}
+      })}
     </div>
   )
 }

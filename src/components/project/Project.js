@@ -21,7 +21,7 @@ const Project = (props) => {
 
 
   return (
-  <div className={classes.projectCard}>
+  <div>
     <Card data-aos="fade-up" className={classes.root}>
       <div>
         <CardContent>

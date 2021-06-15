@@ -13,6 +13,13 @@ const useStyles = makeStyles({
     background: 'linear-gradient(top left, rgb(255, 255, 255, .4), rgb(255, 255, 255, .05))',
     marginBottom: 50
   },
+  projectGrid: {
+    display: 'flex',
+    paddingTop: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%'
+  },
   projectCard: {
     display: 'flex',
     width: '100%'
