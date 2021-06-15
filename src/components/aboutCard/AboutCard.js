@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Typography, IconButton, Button, useMediaQuery, useTheme } from "@material-ui/core";
 import Card from '@material-ui/core/Card';
@@ -7,6 +7,8 @@ import CardContent from '@material-ui/core/CardContent';
 import useStyles from './styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const skillsArray = [
   'Html',
@@ -26,8 +28,12 @@ const skillsArray = [
 const SimpleCard = () => {
   const classes = useStyles();
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
-    <div className={classes.aboutPage}>
+    <div data-aos="fade-up" className={classes.aboutPage}>
       <div className={classes.cardContainer}>
         <Card className={classes.root}>
           <CardContent className={classes.content}>

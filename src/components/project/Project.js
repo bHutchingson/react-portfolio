@@ -1,19 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
+import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import useStyles from "./style";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Project = (props) => {
   const classes = useStyles();
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
+
   return (
-    <Card className={classes.root}>
+    <Card data-aos="fade-left" className={classes.root}>
       <div>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -24,7 +31,7 @@ const Project = (props) => {
             across all continents except Antarctica
         </Typography>
           <Grid>
-
+            hi
           </Grid>
         </CardContent>
         <CardActions>
