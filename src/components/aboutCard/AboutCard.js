@@ -13,14 +13,14 @@ const SimpleCard = () => {
   const bull = <span className={classes.bullet}>•</span>;
 
   return ( <>
-    <div className={classes.backdrop}></div>
+    <div className={classes.backdrop1}></div>
     <Card className={classes.root}>
       <CardContent className={classes.content}>
-        <Typography variant="h5" component="h2" gutterBottom>
+        <Typography className={classes.text} variant="h5" component="h2" gutterBottom>
           About Me
         </Typography>
-        <Typography variant="body2" component="p">
-          
+        <Typography className={classes.about} variant="body2" component="p">
+        What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?
         </Typography>
       </CardContent>
       <CardActions className={classes.contactBtn}>

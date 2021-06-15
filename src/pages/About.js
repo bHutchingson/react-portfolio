@@ -1,5 +1,5 @@
 import React from 'react'
-import SimpleCard from '../aboutCard/AboutCard';
+import SimpleCard from '../components/aboutCard/AboutCard';
 
 function About() {
   return (

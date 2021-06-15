@@ -9,8 +9,15 @@ a {
 }
 
 .page-container {
+  background: fixed url('./images/background-white.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  z-index: 100;
+
 }
