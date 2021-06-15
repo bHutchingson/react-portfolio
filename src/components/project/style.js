@@ -12,6 +12,10 @@ const useStyles = makeStyles({
     backdropFilter: "blur(8px)",
     background: 'linear-gradient(top left, rgb(255, 255, 255, .4), rgb(255, 255, 255, .05))',
     marginBottom: 50
+  },
+  projectCard: {
+    display: 'flex',
+    width: '100%'
   }
 });
 

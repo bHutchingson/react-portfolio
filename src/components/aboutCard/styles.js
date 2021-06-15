@@ -3,9 +3,6 @@ import grey from '@material-ui/core/colors/grey';
 import blueGrey from '@material-ui/core/colors/blueGrey';
 
 
-
-const colorGrey = blueGrey[100];
-
 const useStyles = makeStyles({
   root: {
     display: 'flex',

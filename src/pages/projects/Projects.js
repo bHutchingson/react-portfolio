@@ -1,5 +1,6 @@
 import React from 'react'
-import Project from '../components/project/Project';
+import Project from '../../components/project/Project';
+import useStyles from "./style";
 
 const projectsArray = [
   {
@@ -21,7 +22,8 @@ const projectsArray = [
     Technologies: [
       'Express.js',
       'Node.js',
-      'MongoDB'
+      'MongoDB',
+      'Bootstrap'
     ]
   },
   {
@@ -51,12 +53,16 @@ const projectsArray = [
 ]
 
 function Projects() {
+  const classes = useStyles();
+
   return (
-    projectsArray.map(project => {
+    <div className={classes.projectContainer}>
+      {projectsArray.map(project => {
       return (
         <Project title={project.Title} desc={project.Description} code={project.GitHub} deployed={project.Deployed}/>
       )
-    })
+    })}
+    </div>
   )
 }
 
