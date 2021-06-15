@@ -3,7 +3,7 @@ import Project from '../components/project/Project';
 
 const projectsArray = [
   {
-    Title: 'Employee Directory',
+    "Title": 'Employee Directory',
     Description: 'A searchable table of users, using the RandomUser API. Created with React.js',
     GitHub: 'https://github.com/bHutchingson/employee-directory',
     Deployed: 'https://bhutchingson.github.io/employee-directory/',
@@ -11,7 +11,9 @@ const projectsArray = [
       'React.js',
       'Axios',
       'Bootstrap'
-    ],
+    ]
+  },
+  {
     Title: 'Fitness Tracker',
     Description: 'This project allows users to add exercises and workouts and then displays total workout information for the last 7 days.',
     GitHub: 'https://github.com/bHutchingson/fitness-tracker',
@@ -20,7 +22,9 @@ const projectsArray = [
       'Express.js',
       'Node.js',
       'MongoDB'
-    ],
+    ]
+  },
+  {
     Title: 'Budget Tracker',
     Description: 'The Budget Tracker allows users to enter expenses and displays their total budget as well as a graph of the information. This application works both online and offline.',
     GitHub: 'https://github.com/bHutchingson/budget-tracker',
@@ -30,7 +34,9 @@ const projectsArray = [
       'Node.js',
       'MongoDB',
       'IndexedDB'
-    ],
+    ]
+  },
+  {
     Title: 'Tidder Blog',
     Description: 'This project is a reddit style forum. Allowing users to signup/login, create channels for posting, make blog posts, and comment on other users posts.',
     GitHub: 'https://github.com/bHutchingson/budget-tracker',
@@ -46,7 +52,11 @@ const projectsArray = [
 
 function Projects() {
   return (
-    <Project />
+    projectsArray.map(project => {
+      return (
+        <Project title={project.Title} desc={project.Description} code={project.GitHub} deployed={project.Deployed}/>
+      )
+    })
   )
 }
 

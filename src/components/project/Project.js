@@ -25,10 +25,10 @@ const Project = (props) => {
       <div>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Project Title
+            {props.title}
           </Typography>
           <Typography variant="body2" color="textPrimary" component="p">
-            Project Description
+            {props.desc}
         </Typography>
           <Grid container spacing={1}>
             <Grid className={classes.cardContainer} item xs={4}>
@@ -37,10 +37,10 @@ const Project = (props) => {
           </Grid>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary">
+          <Button size="small" target="_blank" href={props.code} color="primary">
             View Code
-          </Button>
-          <Button size="small" color="primary">
+            </Button>
+          <Button size="small" target="_blank" href={props.deployed} color="primary">
             Deployed Project
           </Button>
         </CardActions>
