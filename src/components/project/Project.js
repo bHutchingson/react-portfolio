@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Projects() {
+const Project = () => {
   return (
     <div>
-      fuck
+      
     </div>
   )
 }
 
-export default Projects
+export default Project

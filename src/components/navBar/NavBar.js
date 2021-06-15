@@ -12,7 +12,7 @@ function NavBar() {
   const isSmall = useMediaQuery(theme.breakpoints.down('sm'));
 
   //page options for navbar
-  const navLinks = ["About", "Projects", "Skills", "Contact"]
+  const navLinks = ["About", "Projects", "Contact"]
 
 
   return (

@@ -14,7 +14,7 @@ const DrawerComponent = () => {
   const classes = useStyles;
 
   //page options for navbar
-  const navLinks = ["About", "Projects", "Skills", "Contact"]
+  const navLinks = ["About", "Projects", "Contact"]
 
   return (
     <>
