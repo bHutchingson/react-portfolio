@@ -9,6 +9,8 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Pdf from "../../images/resume.pdf";
+import Divider from '@material-ui/core/Divider';
 
 const skillsArray = [
   'Html',
@@ -39,13 +41,24 @@ const SimpleCard = () => {
           <CardContent className={classes.content}>
             <Typography className={classes.text} variant="h5" component="h2" gutterBottom>
               About Me
-          </Typography>
+            </Typography>
             <Typography className={classes.about} variant="body2" component="p">
-              What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?
-          </Typography>
+              My name is Brandon, I'm a Full Stack web developer with a focus in MongoDB, Express, React, and Node.js.
+              
+            </Typography>
+            <Divider />
+            <br></br>
+            <Typography className={classes.about} variant="body2" component="p">
+              With a background in customer service, I use those skills to create web applications that meet requirements to fulfill user stories.
+            </Typography>
+            <Divider />
+            <br></br>
+            <Typography className={classes.about} variant="body2" component="p">
+              Achieved Full Stack Web Development Certificate from The Ohio State Universtity Full Stack Bootcamp.
+            </Typography>
           </CardContent>
           <CardActions className={classes.contactBtn}>
-            <Button className={classes.btn} variant="primary" size="medium">Contact Me</Button>
+            <Button className={classes.btn} target="_blank" href={Pdf} variant="primary" size="medium">Resume</Button>
           </CardActions>
         </Card>
       </div>
