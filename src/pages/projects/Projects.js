@@ -5,8 +5,9 @@ import Grid from '@material-ui/core/Grid';
 import { DriveEtaRounded } from '@material-ui/icons';
 
 const projectsArray = [
-  {
-    "Title": 'Employee Directory',
+  { 
+    id: '1',
+    Title: 'Employee Directory',
     Description: 'A searchable table of users, using the RandomUser API. Created with React.js',
     GitHub: 'https://github.com/bHutchingson/employee-directory',
     Deployed: 'https://bhutchingson.github.io/employee-directory/',
@@ -17,6 +18,7 @@ const projectsArray = [
     ]
   },
   {
+    id: '2',
     Title: 'Fitness Tracker',
     Description: 'This project allows users to add exercises and workouts and then displays total workout information for the last 7 days.',
     GitHub: 'https://github.com/bHutchingson/fitness-tracker',
@@ -29,6 +31,7 @@ const projectsArray = [
     ]
   },
   {
+    id: '3',
     Title: 'Budget Tracker',
     Description: 'The Budget Tracker allows users to enter expenses and displays their total budget as well as a graph of the information. This application works both online and offline.',
     GitHub: 'https://github.com/bHutchingson/budget-tracker',
@@ -41,6 +44,7 @@ const projectsArray = [
     ]
   },
   {
+    id: '4',
     Title: 'Tidder Blog',
     Description: 'This project is a reddit style forum. Allowing users to signup/login, create channels for posting, make blog posts, and comment on other users posts.',
     GitHub: 'https://github.com/bHutchingson/budget-tracker',
@@ -58,15 +62,15 @@ function Projects() {
   const classes = useStyles();
 
   return (
-    <div spacing={1} container className={classes.projectContainer}>
+    <Grid spacing={1} container className={classes.projectContainer}>
       {projectsArray.map(project => {
       return (
-        <div className={classes.projectGrid} item >
+        <Grid className={classes.projectGrid} item xs={12} sm={6} >
           <Project className={classes.projectCard} title={project.Title} desc={project.Description} code={project.GitHub} deployed={project.Deployed}/>
-        </div>
+        </Grid>
       )
       })}
-    </div>
+    </Grid>
   )
 }
 

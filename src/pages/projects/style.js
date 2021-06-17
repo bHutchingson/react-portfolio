@@ -4,7 +4,7 @@ const useStyles = makeStyles({
   projectContainer: {
     display: 'flex',
     height: '100%',
-    width: '60%',
+    width: '100%',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center'
@@ -18,7 +18,8 @@ const useStyles = makeStyles({
   },
   projectCard: {
     display: 'flex',
-    width: '100%'
+    width: '100%',
+    alignSelf: 'center',
   }
 });
 

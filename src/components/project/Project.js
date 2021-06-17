@@ -21,7 +21,6 @@ const Project = (props) => {
 
 
   return (
-  <div>
     <Card data-aos="fade-up" className={classes.root}>
       <div>
         <CardContent>
@@ -30,7 +29,7 @@ const Project = (props) => {
           </Typography>
           <Typography variant="body2" color="textPrimary" component="p">
             {props.desc}
-        </Typography>
+          </Typography>
           <Grid container spacing={1}>
             <Grid className={classes.cardContainer} item xs={4}>
               <Paper item className={`${classes.root} ${classes.skillItem}`}></Paper>
@@ -47,7 +46,6 @@ const Project = (props) => {
         </CardActions>
       </div>
     </Card>
-  </div>
   )
 }
 

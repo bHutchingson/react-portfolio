@@ -6,6 +6,10 @@
 body, html {
   min-height: 100% !important;
   height: 100%;
+  background: fixed url('./images/background-white.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 a {
@@ -14,12 +18,9 @@ a {
 }
 
 .page-container {
-  background: fixed url('./images/background-white.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  padding-top: 10vh;
   width: 100vw;
-  /* height: 100; */
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
