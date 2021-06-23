@@ -27,7 +27,7 @@ A personal portfolio created using React.js. This project demonstrates react fea
 
 ## Deployment
 
-[Deployed App](https://bhutchingson.github.io/employee-directory/)
+[Deployed App](https://bhutchingson.github.io/react-portfolio/#/About)
 
 ## Contributing
 
